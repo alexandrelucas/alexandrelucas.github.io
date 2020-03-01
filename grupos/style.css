@@ -1,8 +1,12 @@
+* {
+	padding: 0;
+	margin: 0;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
-    background-color: rgb(43, 100, 133);
+    background-color: rgb(43, 43, 133);
     
 }
 ul{
@@ -10,15 +14,53 @@ ul{
     align-items: center;
     text-align: center;
 }
-div.grupo {
-    margin-left: 10px;
-    background-color: aqua;
+.lista {
+    margin-top: 15px;
+}
+.grupos {
+    margin: 15px auto 0 auto;
+    width: 520px;
+    min-height: 400px;
+}
+.grupos .grupo {
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #222;
     width: 200px;
     float: left;
+    box-shadow: 7px 4px 17px -2px rgba(0,0,0,0.75);
 }
-.botao{
-    background-color: rgb(245, 245, 245);
-    height: 35px;
-    border-radius: 5px;
-    margin: 2px;
+.grupo h3 {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.grupo li {
+    padding-top: 5px;
+	margin-top: 15px;
+	height: 25px;
+}
+.grupo ul > li:nth-of-type(odd) {
+	background: #333;
+}
+.botao {
+    box-shadow: 0px 1px 0px 0px #333;
+    background-color:#333;
+    border-radius:10px;
+    border:2px solid #222;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:14px;
+    font-weight:bold;
+    margin-top: 5px;
+    padding:10px 40px;
+    text-decoration:none;
+}
+.botao:hover {
+    background-color:#222;
+}
+.botao:active {
+    position:relative;
+    top:1px;
 }
