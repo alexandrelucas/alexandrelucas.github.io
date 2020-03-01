@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de grupos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>    
+</head>
+<body>
+    <main>
+        <h1>Gerador de Grupos</h1>
+        <div>
+            <input class="botao" type="submit" value="Inserir integrante" onclick="add()"> 
+        </div>
+        <div>
+            <ul class="lista">
+            </ul>
+        </div>
+        <div>
+            <br> <input class="botao" type="button" value="Gerar grupos" onclick="gerar()">
+        </div>
+        <div class="grupos">
+            <div class="grupo">
+                <h3>Grupo 1</h3>
+                <ul id="grupo1">
+                </ul>
+            </div>
+            <div class="grupo">
+                <h3>Grupo2</h3>
+                <ul id="grupo2">
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
