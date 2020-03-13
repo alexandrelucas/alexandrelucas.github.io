@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div id="formulario">
+        <h3>Cadastrar-se</h3>
+        <input style="margin-top: 65px;" type="text" name="txtLogin" id="txtLogin" placeholder="Usuário"/>
+        <br/>
+        <input type="text" name="txtEmail" id="txtEmail" placeholder="Email"/>
+        <br/>
+        <input type="date" name="txtData" id="txtData" placeholder="Data de Aniversário" value="01-01-1996"/>
+        <br/>
+        <input type="password" name="txtPassword" id="txtPassword" placeholder="Senha"/>
+        <br/>
+        <button onclick="validar_cadastro()">Criar Conta</button>
+        <a href="./login.html" id="navegacao">Voltar ao login</a>
+    </div>
+</body>
+<!-- Para carregar o layout da página primeiro e depois carregar o código js, otimizando a velocidade da página -->
+<script src="./script.js" type="text/javascript"></script>
+</html>
